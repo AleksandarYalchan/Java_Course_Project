@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?import javafx.geometry.Insets?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" spacing="10.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="window.OwnerMenu">
+    <children>
+        <MenuBar prefHeight="32.0" prefWidth="265.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Exit" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="About" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <HBox prefHeight="100.0" prefWidth="200.0">
+            <children>
+                <Label alignment="CENTER" prefHeight="50.0" prefWidth="387.0" text="Welcome " textAlignment="CENTER">
+                    <font>
+                        <Font size="34.0" />
+                    </font>
+                    <padding>
+                        <Insets left="200.0" />
+                    </padding>
+                </Label>
+                <Label fx:id="ownerUserNameLabel" text="label">
+                    <font>
+                        <Font size="34.0" />
+                    </font></Label>
+            </children>
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+            <padding>
+                <Insets left="-90.0" />
+            </padding>
+        </HBox>
+        <Label text="Please make a choice">
+            <font>
+                <Font size="21.0" />
+            </font>
+            <VBox.margin>
+                <Insets left="20.0" />
+            </VBox.margin>
+        </Label>
+        <RadioButton fx:id="createStorageUnit" mnemonicParsing="false" onAction="#groupTheChoice" text="Create Storage Unit ">
+            <VBox.margin>
+                <Insets />
+            </VBox.margin>
+            <padding>
+                <Insets left="20.0" />
+            </padding>
+            <!--      <toggleGroup>-->
+            <!--         <ToggleGroup fx:id="listAllAgents" />-->
+            <!--      </toggleGroup>-->
+        </RadioButton>
+        <RadioButton fx:id="hireAgent" mnemonicParsing="false" onAction="#groupTheChoice" text="Hire Agent/s">
+            <padding>
+                <Insets left="20.0" />
+            </padding>
+        </RadioButton>
+        <RadioButton fx:id="listStorageUnit" mnemonicParsing="false" onAction="#groupTheChoice" text="List All Storage Units">
+            <padding>
+                <Insets left="20.0" />
+            </padding>
+            <toggleGroup>
+                <ToggleGroup fx:id="makeAChoice" />
+            </toggleGroup>
+        </RadioButton>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+            <children>
+                <Button layoutX="25.0" layoutY="36.0" mnemonicParsing="false" onAction="#selectButton" prefHeight="31.0" prefWidth="136.0" text="Select" />
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>

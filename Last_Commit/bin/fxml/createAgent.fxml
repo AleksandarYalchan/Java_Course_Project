@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="513.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="window.CreateAgent">
+    <children>
+        <TitledPane prefHeight="21.0" prefWidth="600.0" text="Create Agent" />
+        <VBox prefHeight="200.0" prefWidth="100.0">
+            <children>
+                <Label text="Input Agents information" />
+                <HBox prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                    <children>
+                        <Label text="Username: " />
+                        <TextField fx:id="userNameAgent" />
+                    </children>
+                    <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                    </padding>
+                </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <Label text="Password:" />
+                  <TextField fx:id="passwordAgent" />
+               </children>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </HBox>
+                <HBox prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                    <children>
+                        <Label text="First name:" />
+                        <TextField fx:id="firstNameAgent" />
+                    </children>
+                    <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                    </padding>
+                </HBox>
+                <HBox prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                    <children>
+                        <Label text="Last name:" />
+                        <TextField fx:id="lastNameAgent" />
+                    </children>
+                    <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                    </padding>
+                </HBox>
+                <HBox prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                    <children>
+                        <Label text="Charging fee:" />
+                        <TextField fx:id="changingFeeAgent" />
+                    </children>
+                    <padding>
+                        <Insets bottom="20.0" left="7.0" right="20.0" top="20.0" />
+                    </padding>
+                </HBox>
+                <HBox prefHeight="120.0" prefWidth="580.0" spacing="30.0">
+                    <children>
+                        <Button mnemonicParsing="false" onAction="#createAgent" text="Submit" />
+                        <Button mnemonicParsing="false" onAction="#cancelButtonClicked" text="Cancel" />
+                    </children>
+                    <padding>
+                        <Insets left="390.0" top="72.0" />
+                    </padding>
+                </HBox>
+            </children>
+            <opaqueInsets>
+                <Insets left="200.0" />
+            </opaqueInsets>
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" />
+            </padding>
+        </VBox>
+    </children>
+    <opaqueInsets>
+        <Insets />
+    </opaqueInsets>
+</VBox>

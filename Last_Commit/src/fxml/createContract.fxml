@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="430.0" prefWidth="603.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="window.CreateContract">
+   <children>
+      <TitledPane animated="false" prefHeight="31.0" prefWidth="601.0" text="Create Contract">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+        </content>
+      </TitledPane>
+      <Label layoutX="38.0" layoutY="49.0" text="Tenant information" />
+      <Label layoutX="21.0" layoutY="81.0" text="First name:" />
+      <Label layoutX="22.0" layoutY="125.0" text="Last name:" />
+      <TextField fx:id="firstNameTenant" layoutX="107.0" layoutY="76.0" />
+      <TextField fx:id="lastNameTenant" layoutX="107.0" layoutY="120.0" />
+      <DatePicker fx:id="dateFrom" layoutX="106.0" layoutY="226.0" />
+      <DatePicker fx:id="dateTo" layoutX="106.0" layoutY="279.0" />
+      <Label layoutX="21.0" layoutY="231.0" text="Data from" />
+      <Label layoutX="20.0" layoutY="287.0" text="Date to" />
+      <Label layoutX="37.0" layoutY="177.0" text="Renting time information:" />
+      <Button layoutX="490.0" layoutY="385.0" mnemonicParsing="false" onAction="#cancelButtonClicked" text="Cancel" />
+      <Button layoutX="328.0" layoutY="385.0" mnemonicParsing="false" onAction="#createContract" prefHeight="31.0" prefWidth="86.0" text="OK" />
+
+   </children>
+</AnchorPane>

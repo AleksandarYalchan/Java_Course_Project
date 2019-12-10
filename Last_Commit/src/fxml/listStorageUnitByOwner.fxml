@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="445.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="window.ListStorageUnitByOwner">
+    <children>
+        <BorderPane prefHeight="400.0" prefWidth="1100.0">
+            <top>
+                <Label text="List of Storage Units" BorderPane.alignment="CENTER">
+                    <font>
+                        <Font size="25.0" />
+                    </font>
+                </Label>
+            </top>
+            <center>
+                <TableView fx:id="tableView" prefHeight="400.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+                    <columns>
+                        <TableColumn fx:id="nameStorageUnitColumn" prefWidth="127.0" text="Name" />
+                        <TableColumn fx:id="addressTableColumn" minWidth="8.0" prefWidth="150.0" text="Address" />
+                        <TableColumn fx:id="sizeStorageUnitColumn" prefWidth="102.0" text="Size" />
+                        <TableColumn fx:id="categoryStorageUnitColumn" prefWidth="108.0" text="Category" />
+                        <TableColumn fx:id="climateStorageUnitColumn" prefWidth="123.0" text="Climate" />
+                        <TableColumn fx:id="containingsStorageUnitColumn" prefWidth="111.0" text="Contains" />
+                        <TableColumn fx:id="rentPriceStorageUnitColumn" minWidth="8.0" prefWidth="91.0" text="Rent price" />
+
+                    </columns>
+                </TableView>
+            </center>
+            <right>
+                <ScrollBar orientation="VERTICAL" BorderPane.alignment="CENTER" />
+            </right>
+        </BorderPane>
+        <Button fx:id="cancelButton" layoutX="511.0" layoutY="407.0" mnemonicParsing="false" onAction="#closeButtonClicked" prefHeight="5.0" prefWidth="64.0" text="Cancel" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="window.HireAgent">
+
+    <children>
+        <MenuBar layoutY="-2.0" prefHeight="32.0" prefWidth="1265.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Close" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Delete" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="About" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <TableView fx:id="tableViewAgents" layoutX="27.0" layoutY="164.0" prefHeight="200.0" prefWidth="480.0">
+            <columns>
+                <TableColumn fx:id="firstNameAgentColumn" prefWidth="120.0" text="First Name" />
+                <TableColumn fx:id="lastNameAgentColumn" prefWidth="120.0" text="Last Name" />
+                <TableColumn fx:id="chargingFeeAgentColumn" prefWidth="120.0" text="Charging Fee" />
+                <TableColumn fx:id="ratingAgentColumn" prefWidth="120.0" text="Rating" />
+            </columns>
+        </TableView>
+                <TableView fx:id="tableViewUnits" layoutX="596.0" layoutY="164.0" prefHeight="200.0" prefWidth="655.0">
+            <columns>
+                <TableColumn fx:id="nameStorageUnitColumn" prefWidth="75.0" text="Name" />
+                <TableColumn fx:id="addressStorageUnitColumn" prefWidth="75.0" text="Address" />
+                <TableColumn fx:id="sizeStorageUnitColumn" prefWidth="75.0" text="Size" />
+                <TableColumn fx:id="categoryStorageUnitColumn" prefWidth="75.0" text="Category" />
+                <TableColumn fx:id="rentPriceStorageUnitColumn" prefWidth="114.0" text="Rent Price" />
+                <TableColumn fx:id="climateStorageUnitColumn" prefWidth="146.0" text="Climatic Conditions" />
+                <TableColumn fx:id="containingsStorageUnitColumn" minWidth="0.0" prefWidth="94.0" text="Containings" />
+            </columns>
+        </TableView>
+        <Button layoutX="517.0" layoutY="323.0" mnemonicParsing="false" onAction="#closeButtonClicked" text="CANCEL" />
+        <Button layoutX="515.0" layoutY="264.0" mnemonicParsing="false" onAction="#addAgentToStorageUnit" text="Add To" />
+    </children>
+
+</AnchorPane>
